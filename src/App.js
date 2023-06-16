@@ -1,22 +1,23 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Details from './components/Details';
-import Covid from './components/Covid';
+import Navbar from './components/Navbar';
 import { Provider } from 'react-redux';
 import store from './redux/store';
+import Homepage from './components/Homepage';
 
 function App() {
 
   return (
     <Provider store={store}>
-      <Router>
+      <BrowserRouter>
+      <Navbar />
       <Routes>
-        <Route path="/" exact element={<Covid />} />
-        <Route path="/details" element={<Home />} />
-        <Route path="/details" element={<Details />} />
+        <Route path="/" exact element={<Homepage />} />
+        {/* <Route path="/details" element={<Homepage />} /> */}
+        <Route path="/countries/:country" element={<Details />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
     </Provider>
     
   );

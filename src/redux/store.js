@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import covidReducer from './CovidSlice';
+import countriesReducer from './CountrySlice'
 
 const store = configureStore({
   reducer: {
-    covid: covidReducer,
+    countries: countriesReducer,
   },
 });
 

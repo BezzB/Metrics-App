@@ -3,8 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { HiArrowCircleRight } from 'react-icons/hi';
 import { fetchCountries } from '../redux/CountrySlice';
-import covid from '../assets/covid-cases.png'
-import '../styles/Homepage.css'
+import covid from '../assets/covid-cases.png';
+import '../styles/Homepage.css';
 
 const Homepage = () => {
   const dispatch = useDispatch();
@@ -20,7 +20,7 @@ const Homepage = () => {
       <div className="map-box">
         <img src={covid} alt="world" className="covid-map" />
       </div>
-      <h2 className="title">Covid-19 Stats from Different Countries</h2>
+      <h2 className="title">Covid-19 Statistics Per Country</h2>
       {loading ? (
         <p>Loading...</p>
       ) : (

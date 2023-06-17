@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { fetchCountries } from '../redux/countrySlice';
+import { fetchCountries } from '../redux/CountrySlice';
 
 // Mock axios module
 jest.mock('axios');

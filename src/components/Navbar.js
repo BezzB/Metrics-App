@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaArrowLeft, FaMicrophone } from 'react-icons/fa';
+import { FaArrowLeft, FaSearch } from 'react-icons/fa';
 import { HiCog } from 'react-icons/hi';
 import '../styles/Navbar.css';
 
@@ -12,7 +12,7 @@ function Navbar() {
           <li><NavLink to="/"><FaArrowLeft /></NavLink></li>
           <li>WorldWide Covid Statistics</li>
           <li className="mic-settings">
-            <div><FaMicrophone /></div>
+            <div><FaSearch /></div>
             <div><HiCog /></div>
           </li>
         </ul>

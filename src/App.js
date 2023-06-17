@@ -1,22 +1,24 @@
 import React from 'react';
-import {Route, Routes,} from 'react-router-dom'
-import store from './redux/configureStore';
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import Home from './components/Home';
 import Details from './components/Details';
+import Navbar from './components/Navbar';
+import store from './redux/store';
+import Homepage from './components/Homepage';
 
 function App() {
   return (
     <Provider store={store}>
-      <section>
+      <BrowserRouter>
+        <Navbar />
         <Routes>
-          <Route exact path="/" element = {<Home />} />
-          <Route path = "/details" element={<Details/>}/>          
+          <Route path="/" exact element={<Homepage />} />
+          <Route path="/countries/:country" element={<Details />} />
         </Routes>
-      </section>
+      </BrowserRouter>
     </Provider>
-     );
+
+  );
 }
 
 export default App;

@@ -1,0 +1,31 @@
+.header {
+  background-color: #39a0ca;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+ul.back-stats {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+li {
+  margin-right: 20px;
+}
+
+.mic-settings {
+  display: flex;
+  align-items: center;
+}
+
+.fa-search {
+  font-size: 20px;
+}
+
+.hi-cog {
+  font-size: 18px;
+  color: #000;
+}

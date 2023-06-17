@@ -72,7 +72,7 @@
 Live Demo Link
 [https://www.loom.com/share/24a90e0f47364d2a913d87d8af2d20ca?sid=a914192e-c77a-4d19-9d82-2ec362dde635]
 
-Link to Site[https://648dbba678649d0e35a5b9c4--beamish-alfajores-b4bfc8.netlify.app/]
+Link to Site [https://648dbba678649d0e35a5b9c4--beamish-alfajores-b4bfc8.netlify.app/]
   
 - **[Modules framework used]**
 - Css
@@ -153,7 +153,8 @@ If you like this please comment on it.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 -Nelson Sakwa on Behance.
-
+This link was crtical in the development of the project as i used it to decide on tthe fonts
+https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)
 
 I would like to thank you my patner Mario and Abass for the help.
 
